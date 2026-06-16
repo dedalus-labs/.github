@@ -15,7 +15,7 @@ const ICONS = {
 
 const GROUPS = [
   {
-    title: "Dedalus Cloud",
+    title: "Dedalus SDKs",
     repos: [
       "dedalus-python",
       "dedalus-typescript",
@@ -27,13 +27,19 @@ const GROUPS = [
       "dedalus-ruby",
       "dedalus-sql",
       "dedalus-openapi",
+    ],
+  },
+  {
+    title: "Developer Tools",
+    repos: [
+      "wingman",
       "dedalus-cli",
       "terraform-provider-dedalus",
       "homebrew-tap",
     ],
   },
   {
-    title: "Dedalus Agents API",
+    title: "Agents API SDKs",
     repos: [
       "dedalus-agents-python",
       "dedalus-agents-typescript",
@@ -49,11 +55,6 @@ const GROUPS = [
     ],
   },
 ];
-
-const FALLBACK_DESCRIPTIONS = new Map([
-  ["homebrew-tap", "Homebrew tap for Dedalus products"],
-  ["terraform-provider-dedalus", "Terraform provider for Dedalus Cloud"],
-]);
 
 function githubToken() {
   if (process.env.GITHUB_TOKEN) return process.env.GITHUB_TOKEN;
@@ -136,10 +137,7 @@ async function publicRepos() {
 }
 
 function row(repo) {
-  const description =
-    repo.description?.replace(/\.$/, "") ??
-    FALLBACK_DESCRIPTIONS.get(repo.name) ??
-    "";
+  const description = repo.description?.replace(/\.$/, "") ?? "";
 
   return `| [${repo.name}](${repo.url}) | ${markdownEscape(description)} | ${repo.stargazerCount} | ${repo.issues.totalCount} | ${repo.pullRequests.totalCount} |`;
 }
