@@ -20,16 +20,16 @@ Get a Dedalus Machine up and running in a few minutes. [Read the docs →](https
 
 Our public SDKs and API specs. Scroll down to see everything.
 
-| Repository | Description | Stars | Issues | Pull Requests |
-|------------|-------------|-------|--------|---------------|
-| [dedalus-agents-python](https://github.com/dedalus-labs/dedalus-agents-python) | Official Python SDK for the Dedalus Agents API | ![Stars](https://img.shields.io/github/stars/dedalus-labs/dedalus-agents-python?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/dedalus-agents-python?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/dedalus-agents-python?style=flat-square) |
-| [dedalus-agents-typescript](https://github.com/dedalus-labs/dedalus-agents-typescript) | Official TypeScript SDK for the Dedalus Agents API | ![Stars](https://img.shields.io/github/stars/dedalus-labs/dedalus-agents-typescript?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/dedalus-agents-typescript?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/dedalus-agents-typescript?style=flat-square) |
-| [dedalus-agents-go](https://github.com/dedalus-labs/dedalus-agents-go) | Official Go SDK for the Dedalus Agents API | ![Stars](https://img.shields.io/github/stars/dedalus-labs/dedalus-agents-go?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/dedalus-agents-go?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/dedalus-agents-go?style=flat-square) |
-| [dedalus-python](https://github.com/dedalus-labs/dedalus-python) | Official Python SDK for the Dedalus platform | ![Stars](https://img.shields.io/github/stars/dedalus-labs/dedalus-python?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/dedalus-python?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/dedalus-python?style=flat-square) |
-| [dedalus-typescript](https://github.com/dedalus-labs/dedalus-typescript) | Official TypeScript SDK for the Dedalus platform | ![Stars](https://img.shields.io/github/stars/dedalus-labs/dedalus-typescript?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/dedalus-typescript?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/dedalus-typescript?style=flat-square) |
-| [dedalus-go](https://github.com/dedalus-labs/dedalus-go) | Official Go SDK for the Dedalus platform | ![Stars](https://img.shields.io/github/stars/dedalus-labs/dedalus-go?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/dedalus-go?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/dedalus-go?style=flat-square) |
-| [dedalus-agents-openapi](https://github.com/dedalus-labs/dedalus-agents-openapi) | OpenAPI specification for the Dedalus Agents API | ![Stars](https://img.shields.io/github/stars/dedalus-labs/dedalus-agents-openapi?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/dedalus-agents-openapi?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/dedalus-agents-openapi?style=flat-square) |
-| [dedalus-openapi](https://github.com/dedalus-labs/dedalus-openapi) | OpenAPI specification for the Dedalus Cloud Services API | ![Stars](https://img.shields.io/github/stars/dedalus-labs/dedalus-openapi?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/dedalus-openapi?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/dedalus-openapi?style=flat-square) |
+| Repository | Description |
+|------------|-------------|
+| [dedalus-agents-python](https://github.com/dedalus-labs/dedalus-agents-python) | Official Python SDK for the Dedalus Agents API |
+| [dedalus-agents-typescript](https://github.com/dedalus-labs/dedalus-agents-typescript) | Official TypeScript SDK for the Dedalus Agents API |
+| [dedalus-agents-go](https://github.com/dedalus-labs/dedalus-agents-go) | Official Go SDK for the Dedalus Agents API |
+| [dedalus-python](https://github.com/dedalus-labs/dedalus-python) | Official Python SDK for the Dedalus platform |
+| [dedalus-typescript](https://github.com/dedalus-labs/dedalus-typescript) | Official TypeScript SDK for the Dedalus platform |
+| [dedalus-go](https://github.com/dedalus-labs/dedalus-go) | Official Go SDK for the Dedalus platform |
+| [dedalus-agents-openapi](https://github.com/dedalus-labs/dedalus-agents-openapi) | OpenAPI specification for the Dedalus Agents API |
+| [dedalus-openapi](https://github.com/dedalus-labs/dedalus-openapi) | OpenAPI specification for the Dedalus Cloud Services API |
 
 Generated SDKs are also public for C#, Java, Kotlin, PHP, Ruby, and SQL.
 
@@ -37,11 +37,11 @@ Generated SDKs are also public for C#, Java, Kotlin, PHP, Ruby, and SQL.
 
 We're devs who also love to build things to make lives easier! Here are some of our oss.
 
-| Repository | Description | Stars | Issues | Pull Requests |
-|------------|-------------|-------|--------|---------------|
-| [slurmq](https://github.com/dedalus-labs/slurmq) | Better CLI tooling for the classic HPC scheduler | ![Stars](https://img.shields.io/github/stars/dedalus-labs/slurmq?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/slurmq?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/slurmq?style=flat-square) |
-| [inline-tests-python](https://github.com/dedalus-labs/inline-tests-python) | Rust-like inline testing in Python, without the compiler | ![Stars](https://img.shields.io/github/stars/dedalus-labs/inline-tests-python?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/inline-tests-python?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/inline-tests-python?style=flat-square) |
-| [Hollywood](https://github.com/dedalus-labs/hollywood) | CI/CD-as-code; write your GitHub Actions in TypeScript | ![Stars](https://img.shields.io/github/stars/dedalus-labs/hollywood?style=flat-square) | ![Issues](https://img.shields.io/github/issues/dedalus-labs/hollywood?style=flat-square) | ![PRs](https://img.shields.io/github/issues-pr/dedalus-labs/hollywood?style=flat-square) |
+| Repository | Description |
+|------------|-------------|
+| [slurmq](https://github.com/dedalus-labs/slurmq) | Better CLI tooling for the classic HPC scheduler |
+| [inline-tests-python](https://github.com/dedalus-labs/inline-tests-python) | Rust-like inline testing in Python, without the compiler |
+| [Hollywood](https://github.com/dedalus-labs/hollywood) | CI/CD-as-code; write your GitHub Actions in TypeScript |
 
 ## Where to Find Us
 
