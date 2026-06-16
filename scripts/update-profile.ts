@@ -1,7 +1,7 @@
 import { job, workflow } from "@dedalus-labs/hollywood";
 
 const CHECKOUT_V4 = "actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5";
-const SETUP_PYTHON_V5 = "actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065";
+const SETUP_NODE_V4 = "actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020";
 
 export const updateProfile = workflow({
 	name: "Update profile README",
@@ -16,13 +16,11 @@ export const updateProfile = workflow({
 			steps: [
 				{ uses: CHECKOUT_V4 },
 				{
-					uses: SETUP_PYTHON_V5,
-					with: { "python-version": "3.12" },
+					uses: SETUP_NODE_V4,
+					with: { "node-version": "24" },
 				},
-				{
-					run: "python scripts/update_profile_readme.py",
-					env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" },
-				},
+				{ run: "npm ci" },
+				{ run: "npm run update:profile", env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" } },
 				{
 					name: "Commit changes",
 					run: [
