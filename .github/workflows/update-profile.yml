@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "24"
       - run: npm ci
-      - run: npm run update:profile
+      - run: npm run profile -- update
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit changes

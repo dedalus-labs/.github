@@ -3,10 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "cli": "tsx scripts/cli.ts",
-    "update:profile": "tsx scripts/cli.ts profile update",
-    "generate:workflows": "tsx scripts/cli.ts workflows generate",
-    "check:workflows": "tsx scripts/cli.ts workflows check",
+    "profile": "tsx scripts/cli.ts profile",
+    "workflows": "tsx scripts/cli.ts workflows",
     "typecheck": "tsx scripts/cli.ts typecheck"
   },
   "devDependencies": {

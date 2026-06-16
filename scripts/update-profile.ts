@@ -20,7 +20,7 @@ export const updateProfile = workflow({
 					with: { "node-version": "24" },
 				},
 				{ run: "npm ci" },
-				{ run: "npm run update:profile", env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" } },
+				{ run: "npm run profile -- update", env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" } },
 				{
 					name: "Commit changes",
 					run: [
