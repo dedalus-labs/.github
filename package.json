@@ -3,14 +3,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "update:profile": "tsx scripts/update-profile-readme.ts",
-    "generate:workflows": "hollywood generate \"scripts/**/*.ts\" --source-root scripts --output .",
-    "check:workflows": "hollywood check --source-root scripts --output .",
-    "typecheck": "tsc --noEmit"
+    "cli": "tsx scripts/cli.ts",
+    "update:profile": "tsx scripts/cli.ts profile update",
+    "generate:workflows": "tsx scripts/cli.ts workflows generate",
+    "check:workflows": "tsx scripts/cli.ts workflows check",
+    "typecheck": "tsx scripts/cli.ts typecheck"
   },
   "devDependencies": {
-    "@types/node": "24.10.2",
     "@dedalus-labs/hollywood": "0.0.1-alpha.1",
+    "@types/node": "24.10.2",
+    "commander": "15.0.0",
     "tsx": "4.22.4",
     "typescript": "5.9.3"
   }

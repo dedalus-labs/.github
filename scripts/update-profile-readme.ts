@@ -307,7 +307,7 @@ const replaceGeneratedBlock = (readme: string, block: string): string => {
 	return `${readme.slice(0, start)}${block}${readme.slice(end + END.length)}`;
 };
 
-const main = async (): Promise<void> => {
+export const updateProfileReadme = async (): Promise<void> => {
 	const token = await githubToken();
 	const repos = await publicRepos({ token });
 	const readme = await readFile(README, "utf8");
@@ -316,5 +316,5 @@ const main = async (): Promise<void> => {
 };
 
 if (process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href) {
-	await main();
+	await updateProfileReadme();
 }
