@@ -1,0 +1,5 @@
+Dedalus Labs GitHub profile.
+
+This repository backs the public-facing GitHub organization homepage.
+GitHub renders profile/README.md on github.com/dedalus-labs.
+Static images live in assets/.
