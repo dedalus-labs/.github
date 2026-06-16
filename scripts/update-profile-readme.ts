@@ -28,13 +28,6 @@ type Group = Readonly<{
 	repos: readonly string[];
 }>;
 
-const ICONS = {
-	repo: "https://raw.githubusercontent.com/primer/octicons/main/icons/repo-16.svg",
-	star: "https://raw.githubusercontent.com/primer/octicons/main/icons/star-16.svg",
-	issue: "https://raw.githubusercontent.com/primer/octicons/main/icons/issue-opened-16.svg",
-	pr: "https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-16.svg",
-} as const;
-
 const GROUPS = [
 	{
 		title: "Dedalus SDKs",
@@ -264,21 +257,70 @@ const parseRepo = (raw: JsonRecord): Repo => {
 
 const markdownEscape = (value: string): string => value.replaceAll("|", "\\|").replaceAll("\n", " ");
 
-const icon = (name: keyof typeof ICONS, label: string): string =>
-	`<img alt="${label}" src="${ICONS[name]}" width="16" height="16">`;
+const shield = (params: Readonly<{ label: string; message: string; color: string }>): string => {
+	const query = new URLSearchParams({
+		style: "flat-square",
+		logo: "github",
+		logoColor: "white",
+		...params,
+	});
+	return `https://img.shields.io/static/v1?${query.toString()}`;
+};
+
+const plural = (count: number, singular: string, pluralValue = `${singular}s`): string =>
+	count === 1 ? singular : pluralValue;
+
+const badge = (
+	repo: Repo,
+	metric: Readonly<{
+		label: string;
+		message: string;
+		color: string;
+		href: string;
+		alt: string;
+	}>,
+): string =>
+	`[![${metric.alt}](${shield({
+		label: metric.label,
+		message: metric.message,
+		color: metric.color,
+	})})](${repo.url}/${metric.href})`;
+
+const issueColor = (count: number): string => (count === 0 ? "1a7f37" : "bf8700");
 
 const descriptionFor = (repo: Repo): string => repo.description?.replace(/\.$/, "") ?? "";
 
 const row = (repo: Repo): string => {
 	const description = markdownEscape(descriptionFor(repo));
-	return `| [${repo.name}](${repo.url}) | ${description} | ${repo.stargazerCount} | ${repo.openIssues} | ${repo.openPullRequests} |`;
+	const stars = badge(repo, {
+		label: "stars",
+		message: String(repo.stargazerCount),
+		color: "0969da",
+		href: "stargazers",
+		alt: `${repo.stargazerCount} ${plural(repo.stargazerCount, "star")}`,
+	});
+	const issues = badge(repo, {
+		label: "issues",
+		message: `${repo.openIssues} open`,
+		color: issueColor(repo.openIssues),
+		href: "issues",
+		alt: `${repo.openIssues} open ${plural(repo.openIssues, "issue")}`,
+	});
+	const pullRequests = badge(repo, {
+		label: "pull requests",
+		message: `${repo.openPullRequests} open`,
+		color: issueColor(repo.openPullRequests),
+		href: "pulls",
+		alt: `${repo.openPullRequests} open ${plural(repo.openPullRequests, "pull request")}`,
+	});
+	return `| [${repo.name}](${repo.url}) | ${description} | ${stars} | ${issues} | ${pullRequests} |`;
 };
 
 const table = (group: Group, repos: ReadonlyMap<string, Repo>): string => {
 	const lines = [
 		`### ${group.title}`,
 		"",
-		`| ${icon("repo", "Repository")} Repository | Description | ${icon("star", "Stars")} | ${icon("issue", "Open issues")} | ${icon("pr", "Open pull requests")} |`,
+		"| Repository | Description | Stars | Issues | Pull Requests |",
 		"|------------|-------------|------:|-------:|----:|",
 	];
 
