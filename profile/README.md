@@ -81,5 +81,3 @@ We are building the future of agents and AI from the ground up. We believe the s
 The future is in all of our hands; this is Dedalus's invitation for you to build alongside us. Give your agent wings.
 
 **Mission:** [dedaluslabs.ai](https://www.dedaluslabs.ai/)
-
-**Founders:** [Cathy Di, co-founder & CEO](https://x.com/itsCathyDi) · [Windsor Nguyen, co-founder & CTO](https://x.com/WindsorNguyen)
