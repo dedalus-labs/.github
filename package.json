@@ -1,0 +1,12 @@
+{
+  "name": "dedalus-labs-dotgithub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:workflows": "hollywood generate \"scripts/**/*.ts\" --source-root scripts --output .",
+    "check:workflows": "hollywood check --source-root scripts --output ."
+  },
+  "devDependencies": {
+    "@dedalus-labs/hollywood": "0.0.1-alpha.1"
+  }
+}
