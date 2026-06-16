@@ -15,7 +15,7 @@ const ICONS = {
 
 const GROUPS = [
   {
-    title: "Dedalus Cloud",
+    title: "Dedalus Machines",
     repos: [
       "dedalus-python",
       "dedalus-typescript",
@@ -27,13 +27,19 @@ const GROUPS = [
       "dedalus-ruby",
       "dedalus-sql",
       "dedalus-openapi",
+    ],
+  },
+  {
+    title: "Developer Tools",
+    repos: [
+      "wingman",
       "dedalus-cli",
       "terraform-provider-dedalus",
       "homebrew-tap",
     ],
   },
   {
-    title: "Dedalus Agents API",
+    title: "Agents API SDKs",
     repos: [
       "dedalus-agents-python",
       "dedalus-agents-typescript",
@@ -52,7 +58,24 @@ const GROUPS = [
 
 const FALLBACK_DESCRIPTIONS = new Map([
   ["homebrew-tap", "Homebrew tap for Dedalus products"],
-  ["terraform-provider-dedalus", "Terraform provider for Dedalus Cloud"],
+  ["terraform-provider-dedalus", "Terraform provider for Dedalus Cloud Services"],
+]);
+
+const DISPLAY_DESCRIPTIONS = new Map([
+  ["dedalus-python", "Official Python SDK for Dedalus Machines"],
+  ["dedalus-typescript", "Official TypeScript SDK for Dedalus Machines"],
+  ["dedalus-go", "Official Go SDK for Dedalus Machines"],
+  ["dedalus-csharp", "Official C# SDK for Dedalus Machines"],
+  ["dedalus-java", "Official Java SDK for Dedalus Machines"],
+  ["dedalus-kotlin", "Official Kotlin SDK for Dedalus Machines"],
+  ["dedalus-php", "Official PHP SDK for Dedalus Machines"],
+  ["dedalus-ruby", "Official Ruby SDK for Dedalus Machines"],
+  ["dedalus-sql", "Official SQL SDK for Dedalus Machines"],
+  ["dedalus-openapi", "OpenAPI specification for Dedalus Machines"],
+  ["wingman", "TUI coding assistant from Dedalus Labs"],
+  ["dedalus-cli", "Official CLI for Dedalus Machines"],
+  ["terraform-provider-dedalus", "Terraform provider for Dedalus Cloud Services"],
+  ["homebrew-tap", "Homebrew tap for Dedalus products"],
 ]);
 
 function githubToken() {
@@ -137,6 +160,7 @@ async function publicRepos() {
 
 function row(repo) {
   const description =
+    DISPLAY_DESCRIPTIONS.get(repo.name) ??
     repo.description?.replace(/\.$/, "") ??
     FALLBACK_DESCRIPTIONS.get(repo.name) ??
     "";
