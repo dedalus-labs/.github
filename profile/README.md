@@ -76,4 +76,4 @@ The future is in all of our hands; this is Dedalus's invitation for you to build
 
 **Mission:** [dedaluslabs.ai](https://www.dedaluslabs.ai/)
 
-**Founders:** [Cathy Di, co-founder](https://x.com/itsCathyDi) · [Windsor Nguyen, CTO and co-founder](https://x.com/WindsorNguyen)
+**Founders:** [Cathy Di, CEO and co-founder](https://x.com/itsCathyDi) · [Windsor Nguyen, CTO and co-founder](https://x.com/WindsorNguyen)
