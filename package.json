@@ -1,0 +1,17 @@
+{
+  "name": "dedalus-labs-dotgithub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "profile": "tsx scripts/cli.ts profile",
+    "workflows": "tsx scripts/cli.ts workflows",
+    "typecheck": "tsx scripts/cli.ts typecheck"
+  },
+  "devDependencies": {
+    "@dedalus-labs/hollywood": "0.0.1-alpha.1",
+    "@types/node": "24.10.2",
+    "commander": "15.0.0",
+    "tsx": "4.22.4",
+    "typescript": "5.9.3"
+  }
+}
