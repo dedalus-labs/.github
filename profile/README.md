@@ -20,16 +20,16 @@ Get a Dedalus Machine up and running in a few minutes. [Read the docs →](https
 
 Our public SDKs and API specs. Scroll down to see everything.
 
-| Repository | Description |
-|------------|-------------|
-| [dedalus-agents-python](https://github.com/dedalus-labs/dedalus-agents-python) | Official Python SDK for the Dedalus Agents API |
-| [dedalus-agents-typescript](https://github.com/dedalus-labs/dedalus-agents-typescript) | Official TypeScript SDK for the Dedalus Agents API |
-| [dedalus-agents-go](https://github.com/dedalus-labs/dedalus-agents-go) | Official Go SDK for the Dedalus Agents API |
-| [dedalus-python](https://github.com/dedalus-labs/dedalus-python) | Official Python SDK for the Dedalus platform |
-| [dedalus-typescript](https://github.com/dedalus-labs/dedalus-typescript) | Official TypeScript SDK for the Dedalus platform |
-| [dedalus-go](https://github.com/dedalus-labs/dedalus-go) | Official Go SDK for the Dedalus platform |
-| [dedalus-agents-openapi](https://github.com/dedalus-labs/dedalus-agents-openapi) | OpenAPI specification for the Dedalus Agents API |
-| [dedalus-openapi](https://github.com/dedalus-labs/dedalus-openapi) | OpenAPI specification for the Dedalus Cloud Services API |
+| Repository | Description | Stars | Issues | Pull Requests |
+|------------|-------------|-------|--------|---------------|
+| [dedalus-agents-python](https://github.com/dedalus-labs/dedalus-agents-python) | Official Python SDK for the Dedalus Agents API | ![Stars](https://badgen.net/github/stars/dedalus-labs/dedalus-agents-python) | ![Issues](https://badgen.net/github/issues/dedalus-labs/dedalus-agents-python) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/dedalus-agents-python) |
+| [dedalus-agents-typescript](https://github.com/dedalus-labs/dedalus-agents-typescript) | Official TypeScript SDK for the Dedalus Agents API | ![Stars](https://badgen.net/github/stars/dedalus-labs/dedalus-agents-typescript) | ![Issues](https://badgen.net/github/issues/dedalus-labs/dedalus-agents-typescript) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/dedalus-agents-typescript) |
+| [dedalus-agents-go](https://github.com/dedalus-labs/dedalus-agents-go) | Official Go SDK for the Dedalus Agents API | ![Stars](https://badgen.net/github/stars/dedalus-labs/dedalus-agents-go) | ![Issues](https://badgen.net/github/issues/dedalus-labs/dedalus-agents-go) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/dedalus-agents-go) |
+| [dedalus-python](https://github.com/dedalus-labs/dedalus-python) | Official Python SDK for the Dedalus platform | ![Stars](https://badgen.net/github/stars/dedalus-labs/dedalus-python) | ![Issues](https://badgen.net/github/issues/dedalus-labs/dedalus-python) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/dedalus-python) |
+| [dedalus-typescript](https://github.com/dedalus-labs/dedalus-typescript) | Official TypeScript SDK for the Dedalus platform | ![Stars](https://badgen.net/github/stars/dedalus-labs/dedalus-typescript) | ![Issues](https://badgen.net/github/issues/dedalus-labs/dedalus-typescript) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/dedalus-typescript) |
+| [dedalus-go](https://github.com/dedalus-labs/dedalus-go) | Official Go SDK for the Dedalus platform | ![Stars](https://badgen.net/github/stars/dedalus-labs/dedalus-go) | ![Issues](https://badgen.net/github/issues/dedalus-labs/dedalus-go) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/dedalus-go) |
+| [dedalus-agents-openapi](https://github.com/dedalus-labs/dedalus-agents-openapi) | OpenAPI specification for the Dedalus Agents API | ![Stars](https://badgen.net/github/stars/dedalus-labs/dedalus-agents-openapi) | ![Issues](https://badgen.net/github/issues/dedalus-labs/dedalus-agents-openapi) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/dedalus-agents-openapi) |
+| [dedalus-openapi](https://github.com/dedalus-labs/dedalus-openapi) | OpenAPI specification for the Dedalus Cloud Services API | ![Stars](https://badgen.net/github/stars/dedalus-labs/dedalus-openapi) | ![Issues](https://badgen.net/github/issues/dedalus-labs/dedalus-openapi) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/dedalus-openapi) |
 
 Generated SDKs are also public for C#, Java, Kotlin, PHP, Ruby, and SQL.
 
@@ -37,11 +37,11 @@ Generated SDKs are also public for C#, Java, Kotlin, PHP, Ruby, and SQL.
 
 We're devs who also love to build things to make lives easier! Here are some of our oss.
 
-| Repository | Description |
-|------------|-------------|
-| [slurmq](https://github.com/dedalus-labs/slurmq) | Better CLI tooling for the classic HPC scheduler |
-| [inline-tests-python](https://github.com/dedalus-labs/inline-tests-python) | Rust-like inline testing in Python, without the compiler |
-| [Hollywood](https://github.com/dedalus-labs/hollywood) | CI/CD-as-code; write your GitHub Actions in TypeScript |
+| Repository | Description | Stars | Issues | Pull Requests |
+|------------|-------------|-------|--------|---------------|
+| [slurmq](https://github.com/dedalus-labs/slurmq) | Better CLI tooling for the classic HPC scheduler | ![Stars](https://badgen.net/github/stars/dedalus-labs/slurmq) | ![Issues](https://badgen.net/github/issues/dedalus-labs/slurmq) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/slurmq) |
+| [inline-tests-python](https://github.com/dedalus-labs/inline-tests-python) | Rust-like inline testing in Python, without the compiler | ![Stars](https://badgen.net/github/stars/dedalus-labs/inline-tests-python) | ![Issues](https://badgen.net/github/issues/dedalus-labs/inline-tests-python) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/inline-tests-python) |
+| [Hollywood](https://github.com/dedalus-labs/hollywood) | CI/CD-as-code; write your GitHub Actions in TypeScript | ![Stars](https://badgen.net/github/stars/dedalus-labs/hollywood) | ![Issues](https://badgen.net/github/issues/dedalus-labs/hollywood) | ![PRs](https://badgen.net/github/open-prs/dedalus-labs/hollywood) |
 
 ## Where to Find Us
 
