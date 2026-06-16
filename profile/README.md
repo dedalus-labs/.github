@@ -6,7 +6,7 @@
 
 **The fastest persistent virtual machine for agents and beyond.**
 
-Dedalus Labs is an AI neolab, co-founded by Cathy Di and Windsor Nguyen, building the compute substrates for the agent-native economy.
+Dedalus Labs is an AI research neolab currently building the fastest persistent VMs for AI agents.
 
 Our flagship product, **Dedalus Machines**, is the fastest persistent computer for AI agents. It enables agents to complete long running tasks on secure, full Linux VMs with zero cold starts, scalable storage, and billing only when your agent is running.
 
