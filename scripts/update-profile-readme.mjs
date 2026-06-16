@@ -15,7 +15,7 @@ const ICONS = {
 
 const GROUPS = [
   {
-    title: "Dedalus Machines",
+    title: "Dedalus SDKs",
     repos: [
       "dedalus-python",
       "dedalus-typescript",
@@ -55,28 +55,6 @@ const GROUPS = [
     ],
   },
 ];
-
-const FALLBACK_DESCRIPTIONS = new Map([
-  ["homebrew-tap", "Homebrew tap for Dedalus products"],
-  ["terraform-provider-dedalus", "Terraform provider for Dedalus Cloud Services"],
-]);
-
-const DISPLAY_DESCRIPTIONS = new Map([
-  ["dedalus-python", "Official Python SDK for Dedalus Machines"],
-  ["dedalus-typescript", "Official TypeScript SDK for Dedalus Machines"],
-  ["dedalus-go", "Official Go SDK for Dedalus Machines"],
-  ["dedalus-csharp", "Official C# SDK for Dedalus Machines"],
-  ["dedalus-java", "Official Java SDK for Dedalus Machines"],
-  ["dedalus-kotlin", "Official Kotlin SDK for Dedalus Machines"],
-  ["dedalus-php", "Official PHP SDK for Dedalus Machines"],
-  ["dedalus-ruby", "Official Ruby SDK for Dedalus Machines"],
-  ["dedalus-sql", "Official SQL SDK for Dedalus Machines"],
-  ["dedalus-openapi", "OpenAPI specification for Dedalus Machines"],
-  ["wingman", "TUI coding assistant from Dedalus Labs"],
-  ["dedalus-cli", "Official CLI for Dedalus Machines"],
-  ["terraform-provider-dedalus", "Terraform provider for Dedalus Cloud Services"],
-  ["homebrew-tap", "Homebrew tap for Dedalus products"],
-]);
 
 function githubToken() {
   if (process.env.GITHUB_TOKEN) return process.env.GITHUB_TOKEN;
@@ -159,11 +137,7 @@ async function publicRepos() {
 }
 
 function row(repo) {
-  const description =
-    DISPLAY_DESCRIPTIONS.get(repo.name) ??
-    repo.description?.replace(/\.$/, "") ??
-    FALLBACK_DESCRIPTIONS.get(repo.name) ??
-    "";
+  const description = repo.description?.replace(/\.$/, "") ?? "";
 
   return `| [${repo.name}](${repo.url}) | ${markdownEscape(description)} | ${repo.stargazerCount} | ${repo.issues.totalCount} | ${repo.pullRequests.totalCount} |`;
 }
