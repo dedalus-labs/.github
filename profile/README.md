@@ -8,7 +8,7 @@
 
 Dedalus Labs is an AI research neolab currently building the fastest persistent VMs for AI agents.
 
-Our flagship product, **Dedalus Machines**, is the fastest persistent computer for AI agents. It enables agents to complete long running tasks on secure, full Linux VMs with zero cold starts, scalable storage, and billing only when your agent is running.
+Our flagship product, **Dedalus Machines**, is the fastest persistent computer for AI agents. It enables agents to complete long-running tasks on secure, full Linux VMs with zero cold starts, scalable storage, and billing only when your agent is running.
 
 [Visit our website →](https://www.dedaluslabs.ai/)
 
@@ -42,7 +42,7 @@ Official SDKs, API specs, and developer tools for Dedalus and the Agents API.
 
 | <img alt="Repository" src="https://raw.githubusercontent.com/primer/octicons/main/icons/repo-16.svg" width="16" height="16"> Repository | Description | <img alt="Stars" src="https://raw.githubusercontent.com/primer/octicons/main/icons/star-16.svg" width="16" height="16"> | <img alt="Open issues" src="https://raw.githubusercontent.com/primer/octicons/main/icons/issue-opened-16.svg" width="16" height="16"> | <img alt="Open pull requests" src="https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-16.svg" width="16" height="16"> |
 |------------|-------------|------:|-------:|----:|
-| [wingman](https://github.com/dedalus-labs/wingman) | scaling capability quotient | 190 | 1 | 4 |
+| [wingman](https://github.com/dedalus-labs/wingman) | Scaling Capability Quotient | 190 | 1 | 4 |
 | [dedalus-cli](https://github.com/dedalus-labs/dedalus-cli) | Official CLI for the Dedalus platform | 5 | 0 | 0 |
 | [terraform-provider-dedalus](https://github.com/dedalus-labs/terraform-provider-dedalus) | The Dedalus Terraform Provider enables Terraform to manage resources on Dedalus Cloud Services | 5 | 0 | 1 |
 | [homebrew-tap](https://github.com/dedalus-labs/homebrew-tap) | Homebrew Tap of Dedalus products | 3 | 0 | 0 |
