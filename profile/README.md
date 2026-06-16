@@ -6,7 +6,7 @@
 
 **The fastest persistent virtual machine for agents and beyond.**
 
-Dedalus Labs is an AI neo lab building the compute substrates for the agent-native economy.
+Dedalus Labs is an AI research neolab currently building the fastest persistent VMs for AI agents.
 
 Our flagship product, **Dedalus Machines**, is the fastest persistent computer for AI agents. It enables agents to complete long running tasks on secure, full Linux VMs with zero cold starts, scalable storage, and billing only when your agent is running.
 
@@ -60,11 +60,13 @@ Official SDKs, API specs, CLIs, and package distribution repositories.
 
 ## Where to Find Us
 
-Come say hi! We're active in all of these and we read everything.
+Events: [Partiful](https://partiful.com/u/X3WJoV6DIpK6BIj8SNPj) · [Luma](https://luma.com/user/dedaluslabs)
 
-- [Discord](https://discord.com/invite/RuDhZKnq5R)
-- [LinkedIn](https://www.linkedin.com/company/dedalus-labs)
-- [X](https://x.com/dedaluslabs)
+Social: [Discord](https://discord.com/invite/RuDhZKnq5R) · [X](https://x.com/dedaluslabs) · [YouTube](https://www.youtube.com/@DedalusLabs) · [LinkedIn](https://www.linkedin.com/company/dedalus-labs) · [Instagram](https://www.instagram.com/dedaluslabs/)
+
+Merch: [Store](https://www.dedaluslabs.ai/store) · [Archives](https://www.instagram.com/archives.dedalus/)
+
+Support: [support@dedaluslabs.ai](mailto:support@dedaluslabs.ai)
 
 ## Philosophy
 
@@ -72,4 +74,6 @@ We are building the future of agents and AI from the ground up. We believe the s
 
 The future is in all of our hands; this is Dedalus's invitation for you to build alongside us. Give your agent wings.
 
-[Our mission→](https://www.dedaluslabs.ai/) · [Cathy (cofounder) on X](https://x.com/itsCathyDi?lang=en)
+**Mission:** [dedaluslabs.ai](https://www.dedaluslabs.ai/)
+
+**Founders:** [Cathy Di, co-founder & CEO](https://x.com/itsCathyDi) · [Windsor Nguyen, co-founder & CTO](https://x.com/WindsorNguyen)
