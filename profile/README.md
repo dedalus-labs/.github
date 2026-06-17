@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/dedalus-logo-transparent.png" alt="Dedalus Labs" width="280" />
+  <img src="../assets/github_header.gif" alt="Dedalus Labs" width="280" />
 </p>
 
 # Dedalus Labs
